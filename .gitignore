@@ -1,0 +1,22 @@
+# VSCode settings
+/.vscode
+
+# Extensions caches
+/.cache
+
+# Intermediate build directory for dependencies
+/build
+
+# Compiled project executable/library
+/target
+
+# Compiled dependencies
+/deps/*
+
+# Generated Documentation
+/docs/private/*
+/docs/html
+
+# Python tooling
+/tools/*/__pycache__/
+*.pyc
