@@ -1,4 +1,4 @@
-// C includes
+/* C includes */
 #include <assert.h>
 #include <ctype.h>
 #include <errno.h>
