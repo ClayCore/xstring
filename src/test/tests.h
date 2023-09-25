@@ -4,18 +4,15 @@
 #include "test/test_result.h"
 
 #ifndef TEST_BEGIN
-#define TEST_BEGIN(n)                   \
-        test_result_t test_##n(void)    \
-        {                               \
-                test_result_t result;   \
-                result.success = false; \
-                result.name    = __func__;
+#define TEST_BEGIN(n)                \
+        test_result_t test_##n(void) \
+        {                            \
+                test_result_t result = { true, __func__ };
 #endif /* TEST_END */
 
 #ifndef TEST_END
-#define TEST_END(n)            \
-        result.success = true; \
-        return (result);       \
+#define TEST_END(n)      \
+        return (result); \
         }
 #endif /* TEST_END */
 
