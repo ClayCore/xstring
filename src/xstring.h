@@ -24,8 +24,11 @@ extern isize xstring_find_rev(xstring *, char);
 extern usize xstring_span(xstring *, xstring *);
 extern usize xstring_span_rev(xstring *, xstring *);
 
-extern void xstring_to_lower(xstring *);
-extern void xstring_to_upper(xstring *);
+extern xstring *xstring_to_lower(xstring *);
+extern xstring *xstring_to_upper(xstring *);
+
+extern void xstring_to_lower_mut(xstring *);
+extern void xstring_to_upper_mut(xstring *);
 
 extern void *xstring_filter(xstring *, xstring *);
 
