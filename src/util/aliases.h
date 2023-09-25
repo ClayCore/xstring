@@ -26,4 +26,10 @@ typedef float f32;
 typedef double f64;
 typedef long double f128;
 
+/* for use in comparisons with stdlib strings */
+typedef enum
+{
+        XSTRING_EQUAL = 0
+} strequal;
+
 #endif /* XSTRING_ALIASES_GUARD_ */
